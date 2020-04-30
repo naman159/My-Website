@@ -12,35 +12,36 @@ class Navbar extends Component {
   render() {
     return (
       <div class="flex flex-wrap justify-center white">
-        <div class="outline w-10 pa3 mr1 white">
-          <a href="https://github.com/naman159">
+        <a href="https://github.com/naman159">
+          <div class="ba b--orange w-15 pa3 mr1 white grow">
             <code>GitHub</code>
-          </a>
-        </div>
-        <div class="outline w-10 pa3 mr1 white">
-          <a href="https://www.linkedin.com/in/nranawat/">
+          </div>
+        </a>
+        <a href="https://www.linkedin.com/in/nranawat/">
+          <div class="ba b--orange w-15 pa3 mr1 white grow">
             <code>LinkedIn</code>
-          </a>
-        </div>
-        <div class="outline w-10 pa3 mr1">
-          <a href="https://myanimelist.net/animelist/Kyoharato">
+          </div>
+        </a>
+        <a href="https://myanimelist.net/animelist/Kyoharato">
+          <div class="ba b--orange w-15 pa3 mr1 white grow">
             <code>Anime</code>
-          </a>
-        </div>
-        <div class="outline w-10 pa3 mr1">
-          <a href="https://www.anime-planet.com/users/kyoharato/manga">
+          </div>
+        </a>
+        <a href="https://www.anime-planet.com/users/kyoharato/manga">
+          <div class="ba b--orange w-15 pa3 mr1 white grow">
             <code>Manga</code>
-          </a>
-        </div>
-        <div class="outline w-10 pa3 mr1">
-          <a>
+          </div>
+        </a>
+        <a>
+          <div class="ba b--orange w-15 pa3 mr1 white grow">
             <code>Code</code>
-          </a>
-        </div><div class="outline w-10 pa3 mr1">
-          <a>
+          </div>
+        </a>
+        <a>
+          <div class="ba b--orange w-15 pa3 mr1 white grow">
             <code>Notes</code>
-          </a>
-        </div>
+          </div>
+        </a>
       </div>
     );
   }

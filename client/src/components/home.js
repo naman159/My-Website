@@ -10,32 +10,23 @@ class Home extends Component {
         <div className="grow">
           <img src="./images/profile.png" />
         </div>
+        <div className="name">
         <h1 className="white lh-title f1">Naman Ranawat</h1>
+          <div className="name2">
           <div className="flex justify-center white">
               <h3 className="mr1">Sleep .</h3>
               <h3 className="mr1">Code .</h3>
-              <h3 className="mr1">Anime .</h3>
-              <h3 className="mr1">Manga .</h3>
+              <h3 className="mr1">Watch .</h3>
+              <h3 className="mr1">Read .</h3>
               <h3>Sleep</h3>
           </div>
+          </div>
+        </div>
         <Navbar className="name" />
       </div>
 
     );
   }
 }
-
-/*<div className = "name">
-  <h1 className="white lh-title f1">Naman Ranawat</h1>
-  <div className="flex">
-    <div className="white center">
-      <h3>Sleep</h3>
-      <h3> | Code</h3>
-      <h3> | Anime</h3>
-      <h3> | Manga</h3>
-      <h3> | Sleep</h3>
-    </div>
-  </div>
-</div>*/
 
 export default Home;
