@@ -11,7 +11,7 @@ class Home extends Component {
           <img src="./images/profile.png" />
         </div>
         <h1 className="white lh-title f1">Naman Ranawat</h1>
-        <Navbar className="b" />
+        <Navbar className="name" />
       </div>
 
     );
