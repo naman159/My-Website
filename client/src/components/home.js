@@ -11,6 +11,13 @@ class Home extends Component {
           <img src="./images/profile.png" />
         </div>
         <h1 className="white lh-title f1">Naman Ranawat</h1>
+          <div className="flex justify-center white">
+              <h3 className="mr1">Sleep .</h3>
+              <h3 className="mr1">Code .</h3>
+              <h3 className="mr1">Anime .</h3>
+              <h3 className="mr1">Manga .</h3>
+              <h3>Sleep</h3>
+          </div>
         <Navbar className="name" />
       </div>
 

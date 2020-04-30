@@ -32,6 +32,15 @@ class Navbar extends Component {
             <code>Manga</code>
           </a>
         </div>
+        <div class="outline w-10 pa3 mr1">
+          <a>
+            <code>Code</code>
+          </a>
+        </div><div class="outline w-10 pa3 mr1">
+          <a>
+            <code>Notes</code>
+          </a>
+        </div>
       </div>
     );
   }
