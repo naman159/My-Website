@@ -1,21 +1,26 @@
 import React, { Component } from "react";
-//import "./App.css";
-import Home from './components/home'
-import "tachyons"
+import Home from './components/home';
+import "tachyons";
+import Code from "./components/navs/code";
+import Notes from "./components/navs/notes";
+import Otaku from "./components/navs/otaku";
+import Contact from "./components/navs/contact";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 class App extends Component {
+
   authenticate(){
   return new Promise(resolve => setTimeout(resolve, 1100)) // 1.1 second
-}
+  }
 
-componentDidMount(){
+  componentDidMount(){
   this.authenticate().then(() => {
     const e = document.getElementById('loader-wrapper')
     if(e){
-      // fade out
+      //fade out
       e.classList.add('available')
       setTimeout(() => {
-        // remove from DOM
+        //remove from DOM
         e.outerHTML = ''
       }, 1000)
     }
@@ -23,7 +28,16 @@ componentDidMount(){
 
   render() {
     return (
-      <Home />
+      <div>
+        //<header>
+          <Home/>
+        //</header>
+        ////<div>
+      ////  <Router>
+
+      ////  </Router>
+    ////  </div>
+      </div>
     )
   }
 }

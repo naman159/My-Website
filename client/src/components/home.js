@@ -1,101 +1,67 @@
 import React, { Component } from "react";
-import "./home.css"
-import Navbar from "./navbar"
-import Typical from 'react-typical'
+import "./home.css";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+//import Navbar from "./navbar";
+import Tagline from "./tagline";
+import Code from "./navs/code";
+import Notes from "./navs/notes";
+import Otaku from "./navs/otaku";
+import Contact from "./navs/contact";
 
 class Home extends Component {
+
   render() {
     return (
       <div className="tc">
-        <div className="grow ba hooray">
-          <img src="./images/profile.png" alt="avatar"/>
-        </div>
-        <div className="name">
-          <h1 className="white lh-title f1">Naman Ranawat</h1>
-            <div className="name2">
-              <div className="flex flex-wrap justify-center white">
-                <div className="mr1">
-                  <p>Sleep ・</p>
-                </div>
-                <div className="mr1">
-                  <p className="mr1">Code ・</p>
-                </div>
-                <div className="mr1">
-                  <p className="mr1">Watch ・</p>
-                </div>
-                <div className="mr1">
-                  <p className="mr1">Read ・</p>
-                </div>
-                <div className="mr1">
-                  <p className="mr1">Repeat ?</p>
-                </div>
-                <div className="mr1">
-                  <p className='grow dim'>
-                  <Typical
-                    steps={[
-                      'Yes!',   //English
-                      1500,
-                      '¡Si!',   //Spanish
-                      1500,
-                      'Oui!',   //French
-                      1500,
-                      'हाँ!',     //Hindi
-                      1500,
-                      '是!',     //Chinese
-                      1500,
-                      'はい！',   //Japanese
-                      1500,
-                      'نعم!',    //Turkish
-                      1500,
-                      'Да!',     //Russian
-                      1500,
-                      'Sim!',
-                      1500,
-                      'હા!',
-                      1500,
-                      'ਹਾਂ!',
-                      1500,
-                      'جی ہاں!',
-                      1500,
-                      'होय!',
-                      1500,
-                      'അതെ!',
-                      1500,
-                      'Sì!',
-                      1500,
-                      'Đúng!',
-                      1500,
-                      'Oo!',
-                      1500,
-                      'Ja!',
-                      1500,
-                      '예!',
-                      1500,
-                      'Ita!',
-                      1500,
-                      'Ναί!',
-                      1500,
-                      'Evet!',
-                      1500,
-                      'כן!',
-                      1500,
-                      'Tak!',
-                      1500,
-                      'ஆம்!',
-                      1500,
-                      'Iya!',
-                      1500
-                      ]}
-                    loop={Infinity}
-                    wrapper="b"
-                  />
-                  </p>
-                </div>
-              </div>
+          <div className="grow ba">
+            <img src="./images/profile.png" alt="avatar"/>
           </div>
-        </div>
-        <Navbar className="name" />
-      </div>
+          <Tagline />
+
+          <Router>
+            <div className="flex flex-wrap justify-center white">
+              <a href="https://github.com/naman159">
+                <div className="ba b--red w-15 pa3 mr1 white grow dim link hover-yellow">
+                  <code>GitHub</code>
+                </div>
+              </a>
+              <a href="https://www.linkedin.com/in/nranawat/">
+                <div className="ba b--red w-15 pa3 mr1 white grow dim link hover-blue">
+                  <code>LinkedIn</code>
+                </div>
+              </a>
+              <Link to="/code">
+                <div className="ba b--red w-15 pa3 mr1 white grow dim link hover-green">
+                  <code>Code</code>
+                </div>
+              </Link>
+              <Link to="/otaku">
+                <div className="ba b--red w-15 pa3 mr1 white grow dim link hover-dark-blue">
+                  <code>Anime/Manga</code>
+                </div>
+              </Link>
+              <Link to='/notes'>
+                <div className="ba b--red w-15 pa3 mr1 white grow dim link hover-pink">
+                  <code>Notes</code>
+                </div>
+              </Link>
+              <Link to='/contact'>
+                <div className="ba b--red w-15 pa3 mr1 white grow dim">
+                  <code>Contact</code>
+                </div>
+              </Link>
+            </div>
+            <div className="center">
+              <Switch>
+                <Route exact path="/code" component={Code} />
+                <Route exact path="/notes" component={Notes} />
+                <Route exact path="/otaku" component={Otaku} />
+                <Route exact path="/contact" component={Contact} />
+              </Switch>
+            </div>
+          </Router>
+
+    </div>
     );
   }
 }
