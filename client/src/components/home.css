@@ -3,6 +3,7 @@ img {
   width: 150px;
   align-items: center;
   margin-top:70px;
+  border-width: 1px;
 }
 
 .name {
