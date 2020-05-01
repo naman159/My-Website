@@ -1,16 +1,11 @@
 import React, { Component } from "react";
 import Home from './components/home';
 import "tachyons";
-import Code from "./components/navs/code";
-import Notes from "./components/navs/notes";
-import Otaku from "./components/navs/otaku";
-import Contact from "./components/navs/contact";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 class App extends Component {
 
   authenticate(){
-  return new Promise(resolve => setTimeout(resolve, 1100)) // 1.1 second
+    return new Promise(resolve => setTimeout(resolve, 1100)) //1.1 second
   }
 
   componentDidMount(){
@@ -28,16 +23,7 @@ class App extends Component {
 
   render() {
     return (
-      <div>
-        //<header>
-          <Home/>
-        //</header>
-        ////<div>
-      ////  <Router>
-
-      ////  </Router>
-    ////  </div>
-      </div>
+      <Home/>
     )
   }
 }

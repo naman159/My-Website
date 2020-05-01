@@ -8,14 +8,16 @@ import Notes from "./navs/notes";
 import Otaku from "./navs/otaku";
 import Contact from "./navs/contact";
 
+const l = "http://localhost:3000/";
+
 class Home extends Component {
 
   render() {
     return (
       <div className="tc">
-          <div className="grow ba">
-            <img src="./images/profile.png" alt="avatar"/>
-          </div>
+        <a href={l}>
+            <img src="./images/profile.png" alt="avatar" className="grow ba"/>
+        </a>
           <Tagline />
 
           <Router>
@@ -51,7 +53,7 @@ class Home extends Component {
                 </div>
               </Link>
             </div>
-            
+
             <div className="center">
               <Switch>
                 <Route exact path="/code" component={Code} />
