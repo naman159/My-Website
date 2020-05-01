@@ -13,12 +13,23 @@ class Home extends Component {
         <div className="name">
           <h1 className="white lh-title f1">Naman Ranawat</h1>
             <div className="name2">
-              <div className="flex justify-center white">
-                  <p className="mr1">Sleep ・</p>
+              <div className="flex flex-wrap justify-center white">
+                <div className="mr1">
+                  <p>Sleep ・</p>
+                </div>
+                <div className="mr1">
                   <p className="mr1">Code ・</p>
+                </div>
+                <div className="mr1">
                   <p className="mr1">Watch ・</p>
+                </div>
+                <div className="mr1">
                   <p className="mr1">Read ・</p>
+                </div>
+                <div className="mr1">
                   <p className="mr1">Repeat ?</p>
+                </div>
+                <div className="mr1">
                   <p className='grow dim'>
                   <Typical
                     steps={[
@@ -79,6 +90,7 @@ class Home extends Component {
                     wrapper="b"
                   />
                   </p>
+                </div>
               </div>
           </div>
         </div>
