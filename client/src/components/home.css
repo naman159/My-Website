@@ -1,6 +1,6 @@
 img {
   border-radius: 50%;
-  width: 150px;
+  width: 160px;
   align-items: center;
   margin-top:70px;
   border-width: 1px;
@@ -16,4 +16,5 @@ img {
 
 h1 {
   margin-top:-25px;
+  -webkit-text-stroke: 0px navy;
 }

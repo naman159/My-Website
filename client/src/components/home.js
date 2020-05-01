@@ -1,8 +1,6 @@
 import React, { Component } from "react";
 import "./home.css"
-import "tachyons"
 import Navbar from "./navbar"
-import Typist from 'react-typist';
 import Typical from 'react-typical'
 
 class Home extends Component {
@@ -10,35 +8,35 @@ class Home extends Component {
     return (
       <div className="tc">
         <div className="grow ba hooray">
-          <img src="./images/profile.png" />
+          <img src="./images/profile.png" alt="avatar"/>
         </div>
         <div className="name">
           <h1 className="white lh-title f1">Naman Ranawat</h1>
             <div className="name2">
               <div className="flex justify-center white">
-                  <p className="mr1">Sleep .</p>
-                  <p className="mr1">Code .</p>
-                  <p className="mr1">Watch .</p>
-                  <p className="mr1">Read .</p>
-                  <p className="mr1">Repeat?</p>
-                  <p>
+                  <p className="mr1">Sleep ・</p>
+                  <p className="mr1">Code ・</p>
+                  <p className="mr1">Watch ・</p>
+                  <p className="mr1">Read ・</p>
+                  <p className="mr1">Repeat ?</p>
+                  <p className='grow dim'>
                   <Typical
                     steps={[
-                      'Yes!',
+                      'Yes!',   //English
                       1500,
-                      '¡Si!',
+                      '¡Si!',   //Spanish
                       1500,
-                      'Oui!',
+                      'Oui!',   //French
                       1500,
-                      'हाँ!',
+                      'हाँ!',     //Hindi
                       1500,
-                      '是!',
+                      '是!',     //Chinese
                       1500,
-                      'はい',
+                      'はい！',   //Japanese
                       1500,
-                      'نعم!',
+                      'نعم!',    //Turkish
                       1500,
-                      'Да!',
+                      'Да!',     //Russian
                       1500,
                       'Sim!',
                       1500,
@@ -53,6 +51,28 @@ class Home extends Component {
                       'അതെ!',
                       1500,
                       'Sì!',
+                      1500,
+                      'Đúng!',
+                      1500,
+                      'Oo!',
+                      1500,
+                      'Ja!',
+                      1500,
+                      '예!',
+                      1500,
+                      'Ita!',
+                      1500,
+                      'Ναί!',
+                      1500,
+                      'Evet!',
+                      1500,
+                      'כן!',
+                      1500,
+                      'Tak!',
+                      1500,
+                      'ஆம்!',
+                      1500,
+                      'Iya!',
                       1500
                       ]}
                     loop={Infinity}
@@ -64,24 +84,8 @@ class Home extends Component {
         </div>
         <Navbar className="name" />
       </div>
-
     );
   }
 }
-/*
-<div className="name2">
-  <div className="flex justify-center white">
-      <h3 className="mr1">Sleep .</h3>
-      <h3 className="mr1">Code .</h3>
-      <h3 className="mr1">Watch .</h3>
-      <h3 className="mr1">Read .</h3>
-      <h3 className="mr1">Repeat?</h3>
-      <Typical
-        steps={['Hello', 1500, 'Hello world!', 500]}
-        loop={Infinity}
-        wrapper="p"
-      />
-  </div>
-</div>
-*/
+
 export default Home;
