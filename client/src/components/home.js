@@ -51,6 +51,7 @@ class Home extends Component {
                 </div>
               </Link>
             </div>
+            
             <div className="center">
               <Switch>
                 <Route exact path="/code" component={Code} />
