@@ -5,7 +5,7 @@ import "tachyons";
 class App extends Component {
 
   authenticate(){
-    return new Promise(resolve => setTimeout(resolve, 1100)) //1.1 second
+    return new Promise(resolve => setTimeout(resolve,1100)) //1.1 second
   }
 
   componentDidMount(){

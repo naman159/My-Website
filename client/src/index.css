@@ -37,7 +37,10 @@ body {
   width: 100%;
   background-color: #64FFDA;
   animation: loader-inner 2s infinite ease-in;
+  font-size: 200%;
+  color: #000428;
 }
+
 @keyframes loader {
   0% { transform: rotate(0deg);}
   25% { transform: rotate(180deg);}
