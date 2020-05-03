@@ -1,11 +1,10 @@
 import React, { Component } from "react";
 import "./home.css";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
-import Tagline from "./tagline";
-import Code from "./navs/code";
-import Notes from "./navs/notes";
-import Otaku from "./navs/otaku";
-import Contact from "./navs/contact";
+import Code from "./navs/code/code";
+import Notes from "./navs/notes/notes";
+import Otaku from "./navs/otaku/otaku";
+import Contact from "./navs/contact/contact";
 
 const l = "http://localhost:3000/";
 

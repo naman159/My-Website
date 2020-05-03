@@ -10,15 +10,25 @@ class Home extends Component {
 
   render() {
     return (
+      <div>
       <div className="tc">
           <a href={l}>
-            <Tilt>
+          <Tilt
+            className="tilt-img"
+            tiltMaxAngleX={10}
+            tiltMaxAngleY={10}
+            perspective={900}
+            scale={1.1}
+            transitionSpeed={2000}
+            gyroscope={true}
+          >
               <img src="./images/profile.png" alt="avatar" className="ba neon bw3"/>
             </Tilt>
           </a>
         <Tagline className="t"/>
-        <Navbar />
-    </div>
+        </div>
+      <Navbar />
+      </div>
     );
   }
 }
