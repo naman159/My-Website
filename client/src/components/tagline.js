@@ -8,7 +8,7 @@ class Tagline extends Component {
     return (
         <div className="name">
           <h1 className="myname">Naman Ranawat</h1>
-            <div className="name2 tag">
+            <div className="name4 tag">
               <div className="flex flex-wrap justify-center name2">
                 <div className="mr1">
                   <p>Sleep ・</p>

@@ -53,11 +53,11 @@ class Otaku extends Component {
                     <div className="pa1 name">
                       <p>
                         <span className="mr1 neon">▹ </span>
-                        <span className="notneon"># of Mange Read : 10</span>
+                        <span className="notneon"># of Manga Read : 10</span>
                       </p>
                       <p>
                         <span className="mr1 neon">▹ </span>
-                        <span className="notneon"># of Mange Reading : 10</span>
+                        <span className="notneon"># of Manga Reading : 10</span>
                       </p>
                       <p>
                         <span className="mr1 neon">▹ </span>

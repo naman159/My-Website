@@ -12,19 +12,18 @@ class Home extends Component {
     return (
       <div>
       <div className="tc">
+      <Tilt
+        className="tilt-img"
+        tiltMaxAngleX={10}
+        tiltMaxAngleY={10}
+        perspective={900}
+        scale={1.1}
+        transitionSpeed={2000}
+        gyroscope={true}>
           <a href={l}>
-          <Tilt
-            className="tilt-img"
-            tiltMaxAngleX={10}
-            tiltMaxAngleY={10}
-            perspective={900}
-            scale={1.1}
-            transitionSpeed={2000}
-            gyroscope={true}
-          >
-              <img src="./images/profile.png" alt="avatar" className="ba neon bw3"/>
-            </Tilt>
+            <img src="./images/profile.png" alt="avatar" className="ba neon bw3"/>
           </a>
+        </Tilt>
         <Tagline className="t"/>
         </div>
       <Navbar />
