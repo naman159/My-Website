@@ -2,7 +2,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Ubuntu', sans-serif;
-  background-color: black;
+  background-color: #000428;
 }
 
 .content {
@@ -18,7 +18,7 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  background-color: black;
+  background-color: #000428;
   display:flex;
   justify-content: center;
   align-items: center;
@@ -28,14 +28,14 @@ body {
   width: 38px;
   height: 38px;
   position: relative;
-  border: 4px solid #Fff;
+  border: 4px solid #64FFDA;
   animation: loader 2s infinite ease;
 }
 .loader-inner {
   vertical-align: top;
   display: inline-block;
   width: 100%;
-  background-color: #fff;
+  background-color: #64FFDA;
   animation: loader-inner 2s infinite ease-in;
 }
 @keyframes loader {

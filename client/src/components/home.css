@@ -1,9 +1,10 @@
 img {
   border-radius: 50%;
-  width: 160px;
+  width: 180px;
   align-items: center;
   margin-top:70px;
   border-width: 1px;
+  margin-top: 2rem;
 }
 
 .name {
@@ -15,8 +16,9 @@ img {
 }
 
 h1 {
-  margin-top:-25px;
+  margin-top:-100px;
   -webkit-text-stroke: 0px navy;
+  color: #CCD6F6;
 }
 
 a:link {
@@ -33,4 +35,18 @@ a:hover {
 
 a:active {
   text-decoration: none;
+}
+
+.neon{
+  border-color: #64FFDA;
+  color: #64FFDA;
+}
+
+.tag {
+  color: #8892B0;
+}
+
+.myname {
+   font-size: 3.9rem;
+   margin-top: 2.1rem;
 }
