@@ -10,38 +10,80 @@ const l = "http://localhost:3000/";
 
 class Navbar extends Component {
 
+  constructor(props){
+    super(props);
+    this.state = {
+      color1: "ba w-15 pa3 mr1 dim link hover neon",
+      color2: "ba w-15 pa3 mr1  dim link hover neon",
+      color3: "ba w-15 pa3 mr1  dim link hover neon",
+      color4: "ba w-15 pa3 mr1  dim link hover neon",
+    }
+  }
+
+  changeColor1 = () => {
+    this.setState({
+      color1: "ba w-15 pa3 mr1 link hover neon route",
+      color2: "ba w-15 pa3 mr1  dim link hover neon",
+      color3: "ba w-15 pa3 mr1  dim link hover neon",
+      color4: "ba w-15 pa3 mr1  dim link hover neon" });
+  }
+
+  changeColor2 = () => {
+    this.setState({
+      color1: "ba w-15 pa3 mr1 dim link hover neon",
+      color2: "ba w-15 pa3 mr1 link hover neon route",
+      color3: "ba w-15 pa3 mr1 dim link hover neon",
+      color4: "ba w-15 pa3 mr1 dim link hover neon" });
+  }
+
+  changeColor3 = () => {
+    this.setState({
+      color1: "ba w-15 pa3 mr1 dim link hover neon",
+      color2: "ba w-15 pa3 mr1 dim link hover neon",
+      color3: "ba w-15 pa3 mr1 link hover neon route",
+      color4: "ba w-15 pa3 mr1 dim link hover neon" });
+  }
+
+  changeColor4 = () => {
+    this.setState({
+      color1: "ba w-15 pa3 mr1 dim link hover neon",
+      color2: "ba w-15 pa3 mr1 dim link hover neon",
+      color3: "ba w-15 pa3 mr1 dim link hover neon",
+      color4: "ba w-15 pa3 mr1 link hover neon route" });
+  }
+
   render() {
     return (
 
           <Router>
             <div className="flex flex-wrap justify-center">
-              <a href="https://github.com/naman159">
-                <div className="ba w-15 pa3 mr1 grow dim link hover neon">
+              <a style={{display: "table-cell"}} href="https://github.com/naman159" target="_blank">
+                <div className="ba w-15 pa3 mr1  dim link hover neon">
                   <code>GitHub</code>
                 </div>
               </a>
-              <a href="https://www.linkedin.com/in/nranawat/">
-                <div className="ba w-15 pa3 mr1 grow dim link hover neon button">
+              <a style={{display: "table-cell"}} href="https://www.linkedin.com/in/nranawat/" target="_blank">
+                <div className="ba w-15 pa3 mr1  dim link hover neon">
                   <code>LinkedIn</code>
                 </div>
               </a>
               <Link to="/code">
-                <div className="ba w-15 pa3 mr1 grow dim link hover neon">
+                <div onClick={this.changeColor1} className={this.state.color1}>
                   <code>Code</code>
                 </div>
               </Link>
               <Link to="/otaku">
-                <div className="ba w-15 pa3 mr1 grow dim link hover neon">
+                <div onClick={this.changeColor2} className={this.state.color2}>
                   <code>Anime/Manga</code>
                 </div>
               </Link>
               <Link to='/notes'>
-                <div className="ba w-15 pa3 mr1 grow dim link hover neon">
+                <div onClick={this.changeColor3} className={this.state.color3}>
                   <code>Notes</code>
                 </div>
               </Link>
               <Link to='/contact'>
-                <div className="ba w-15 pa3 mr1 grow dim link hover neon">
+                <div onClick={this.changeColor4} className={this.state.color4}>
                   <code>Contact</code>
                 </div>
               </Link>
