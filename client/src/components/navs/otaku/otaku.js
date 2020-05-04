@@ -1,33 +1,17 @@
 import React, { Component } from "react";
-//import Tilt from 'react-parallax-tilt';
 import Tilt from 'react-tilt'
-const jikanjs  = require('jikanjs');
 
 class Otaku extends Component {
-
-  constructor(props){
-    super(props);
-    this.state = {
-      anime:''
-    }
-  }
-
-  componentDidMount(){
-    jikanjs.loadUser('kyoharato', 'profile').then((response) => {
-      this.setState({anime: response.anime_stats});
-      console.log(this.state.anime);
-    })
-    .catch((err) => {
-    console.error(err); // in case a error happens
-})
-  }
-
 
   render() {
     return (
       <div>
         <div>
-          <p className="tc">Anime, Donghua, Manga, Manhua & Manhwa. You name it, I love it 😌!</p>
+          <p className="tc">
+            <span>Anime, Donghua, Manga, Manhua or Manhwa. You name it, I love it</span>
+            <span role="img" aria-label=":)"> 😌</span>
+            <span>!</span>
+          </p>
         </div>
 
         <div className="flex flex-wrap justify-center tl">
@@ -40,31 +24,31 @@ class Otaku extends Component {
                     <div className="pa1 name">
                       <p>
                         <span className="mr1 neon">▹ </span>
-                        <span className="notneon"># of Shows Watched : {this.state.anime.completed}</span>
+                        <span className="notneon"># of Shows Watched : {this.props.anime.completed}</span>
                       </p>
                       <p>
                         <span className="mr1 neon">▹ </span>
-                        <span className="notneon"># of Shows Watching : {this.state.anime.watching}</span>
+                        <span className="notneon"># of Shows Watching : {this.props.anime.watching}</span>
                       </p>
                       <p>
                         <span className="mr1 neon">▹ </span>
-                        <span className="notneon"># of Shows to Watch : {this.state.anime.plan_to_watch}</span>
+                        <span className="notneon"># of Shows to Watch : {this.props.anime.plan_to_watch}</span>
                       </p>
                       <p>
                         <span className="mr1 neon">▹ </span>
-                        <span className="notneon"># of Shows On Hold : {this.state.anime.on_hold}</span>
+                        <span className="notneon"># of Shows On Hold : {this.props.anime.on_hold}</span>
                       </p>
                       <p>
                         <span className="mr1 neon">▹ </span>
-                        <span className="notneon"># of Shows Dropped : {this.state.anime.dropped}</span>
+                        <span className="notneon"># of Shows Dropped : {this.props.anime.dropped}</span>
                       </p>
                       <p>
                         <span className="mr1 neon">▹ </span>
-                        <span className="notneon"># of Episodes Watched : {this.state.anime.episodes_watched}</span>
+                        <span className="notneon"># of Episodes Watched : {this.props.anime.episodes_watched}</span>
                       </p>
                       <p>
                         <span className="mr1 neon">▹ </span>
-                        <span className="notneon">Time Spent (hours) : {this.state.anime.days_watched*24 | 0}</span>
+                        <span className="notneon">Time Spent (hours) : {this.props.anime.days_watched*24 | 0}</span>
                       </p>
                       </div>
                   </div>

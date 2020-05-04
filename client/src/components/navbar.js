@@ -6,8 +6,6 @@ import Notes from "./navs/notes/notes";
 import Otaku from "./navs/otaku/otaku";
 import Contact from "./navs/contact/contact";
 
-const l = "http://localhost:3000/";
-
 class Navbar extends Component {
 
   constructor(props){
@@ -93,7 +91,7 @@ class Navbar extends Component {
               <Switch>
                 <Route exact path="/code" component={Code} />
                 <Route exact path="/notes" component={Notes} />
-                <Route exact path="/otaku" component={Otaku} />
+                <Route exact path="/otaku" render={(props) => <Otaku {...props} anime={this.props.anime} />} />
                 <Route exact path="/contact" component={Contact} />
               </Switch>
             </div>
