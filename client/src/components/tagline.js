@@ -1,14 +1,13 @@
 import React, { Component } from "react";
 import "./home.css";
 import Typical from 'react-typical';
-//import "./tagline.css";
 
 class Tagline extends Component {
   render() {
     return (
         <div className="name">
-          <h1 className="myname">Naman Ranawat</h1>
-            <div className="name4 tag">
+          <h1 className="myname rainbow">Naman Ranawat</h1>
+            <div className="name4 tag rainbow">
               <div className="flex flex-wrap justify-center name2">
                 <div className="mr1">
                   <p>Sleep ・</p>
@@ -25,8 +24,8 @@ class Tagline extends Component {
                 <div className="mr1">
                   <p className="mr1">Repeat ?</p>
                 </div>
-                <div className="mr1 tag">
-                  <p className='grow dim'>
+                <div className="mr1 grow">
+                  <p>
                   <Typical
                     steps={[
                       '',   //English
