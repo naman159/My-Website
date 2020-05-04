@@ -20,9 +20,11 @@ class Home extends Component {
         scale={1.1}
         transitionSpeed={2000}
         gyroscope={true}>
+        <div className="rainbow">
           <a href={l}>
             <img src="./images/profile.png" alt="avatar" className="ba neon bw3"/>
           </a>
+        </div>
         </Tilt>
         <Tagline className="t"/>
         </div>

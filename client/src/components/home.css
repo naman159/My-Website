@@ -85,6 +85,12 @@ h3 {
   color: #000428;
 }
 
+.bc {
+  border-color: #172a45;
+  background-color: #172a45;
+  box-shadow: 4px 4px 4px 4px rgba( 0, 0, 0, 0.2 );
+}
+
 .rainbow:hover {
 -webkit-animation:rainbow 6s infinite;
 -ms-animation:rainbow 6s infinite;

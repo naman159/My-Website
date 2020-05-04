@@ -57,12 +57,12 @@ class Navbar extends Component {
 
           <Router>
             <div className="flex flex-wrap justify-center">
-              <a style={{display: "table-cell"}} href="https://github.com/naman159" target="_blank">
+              <a style={{display: "table-cell"}} href="https://github.com/naman159" target="_blank" rel="noopener noreferrer">
                 <div className="ba w-15 pa3 mr1  dim link hover neon">
                   <code>GitHub</code>
                 </div>
               </a>
-              <a style={{display: "table-cell"}} href="https://www.linkedin.com/in/nranawat/" target="_blank">
+              <a style={{display: "table-cell"}} href="https://www.linkedin.com/in/nranawat/" target="_blank" rel="noopener noreferrer">
                 <div className="ba w-15 pa3 mr1  dim link hover neon">
                   <code>LinkedIn</code>
                 </div>
