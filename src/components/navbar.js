@@ -5,6 +5,7 @@ import Code from "./navs/code/code";
 import Notes from "./navs/notes/notes";
 import Otaku from "./navs/otaku/otaku";
 import Contact from "./navs/contact/contact";
+import Fade from 'react-reveal/Fade';
 
 class Navbar extends Component {
 
@@ -54,6 +55,7 @@ class Navbar extends Component {
     return (
 
           <Router>
+          <Fade bottom>
             <div className="flex flex-wrap justify-center">
               <a style={{display: "table-cell"}} href="https://github.com/naman159" target="_blank" rel="noopener noreferrer">
                 <div className="ba w-15 pa3 mr1  dim link hover neon round shadow-1">
@@ -95,6 +97,7 @@ class Navbar extends Component {
                 <Route exact path="/contact" component={Contact} />
               </Switch>
             </div>
+            </Fade>
           </Router>
     );
   }

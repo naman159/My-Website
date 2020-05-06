@@ -2,6 +2,8 @@ import React, { Component } from "react";
 import "./home.css";
 import Typical from 'react-typical';
 import Tilt from 'react-tilt';
+import Fade from 'react-reveal/Fade';
+import Navbar from "./navbar";
 
 const l = "http://localhost:3000/";
 
@@ -9,6 +11,7 @@ class Head extends Component {
   render() {
     return (
       <div className="tc flex flex-column justify-center">
+      <Fade big>
         <Tilt>
           <div className="rainbow">
             <a href={l}>
@@ -16,12 +19,14 @@ class Head extends Component {
             </a>
           </div>
         </Tilt>
-        <div className="name">
+      </Fade>
+      <div className="name">
+      <Fade bottom>
         <div className="mt4">
           <h1 className="myname rainbow">Naman Ranawat</h1>
         </div>
-            <div className="tag rainbow">
-              <div className="flex flex-wrap justify-center name2">
+
+              <div className="tag rainbow flex flex-wrap justify-center name2">
                 <div className="mr1">
                   <p>Sleep ・</p>
                 </div>
@@ -101,8 +106,9 @@ class Head extends Component {
                   />
                   </p>
                 </div>
-              </div>
           </div>
+          <Navbar anime={this.props.anime}/>
+          </Fade>
         </div>
       </div>
     );

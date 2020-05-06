@@ -26,8 +26,7 @@ class Home extends Component {
   render() {
     return (
       <div>
-        <Head/>
-        <Navbar anime={this.state.anime}/>
+        <Head anime={this.state.anime}/>
       </div>
     );
   }
