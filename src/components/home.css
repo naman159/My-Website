@@ -1,0 +1,169 @@
+img {
+  border-radius: 50%;
+  width: 180px;
+  align-items: center;
+  margin-top:70px;
+  margin-top: 2rem;
+  display: inline;
+}
+
+.name {
+  margin-top:-30px;
+}
+
+.name1 {
+  margin-top:0px;
+}
+
+.name2 {
+    margin-top:-50px;
+}
+
+.name3 {
+    margin-top:-35px;
+}
+
+.name4 {
+    margin-top:-40px;
+}
+
+h1 {
+  margin-top:-100px;
+  -webkit-text-stroke: 0px navy;
+  color: #CCD6F6;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a:active {
+  text-decoration: none;
+}
+
+.neon{
+  border-color: #64FFDA;
+  color: #64FFDA;
+}
+
+.tag {
+  display: inline-block;
+  margin: 1em;
+  color: #8892B0;
+  width: 410px;
+  margin:0 auto;
+}
+
+.myname {
+   font-size: 3.9rem;
+   margin-top: 3rem;
+   display: inline;
+}
+
+ul {
+  columns: 2;
+  -webkit-columns: 2;
+  -moz-columns: 2;
+}
+
+h3 {
+  text-decoration: underline;
+}
+
+.notneon {
+  color: #CCDCF6;
+}
+
+.notneonn {
+  color: #8892B0;
+}
+
+.route {
+  background: #CCDCF6;
+  color: #000428;
+}
+
+.bc {
+  border-color: #172a45;
+  background-color: #172a45;
+  box-shadow: 4px 4px 4px 4px rgba( 0, 0, 0, 0.4 );
+}
+
+.round {
+  border-radius: .16rem;
+}
+
+.rel {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.rainbow:hover {
+-webkit-animation:rainbow 6s infinite;
+-ms-animation:rainbow 6s infinite;
+-o-animation:rainbow 6s infinite;
+animation:rainbow 6s infinite;
+}
+@-webkit-keyframes rainbow {
+0% {color: #ff0000;}
+10% {color: #ff8000;}
+20% {color: #ffff00;}
+30% {color: #80ff00;}
+40% {color: #00ff00;}
+50% {color: #00ff80;}
+60% {color: #00ffff;}
+70% {color: #0080ff;}
+80% {color: #0000ff;}
+90% {color: #8000ff;}
+100% {color: #ff0080;}
+}
+@-ms-keyframes rainbow {
+0% {color: #ff0000;}
+10% {color: #ff8000;}
+20% {color: #ffff00;}
+30% {color: #80ff00;}
+40% {color: #00ff00;}
+50% {color: #00ff80;}
+60% {color: #00ffff;}
+70% {color: #0080ff;}
+80% {color: #0000ff;}
+90% {color: #8000ff;}
+100% {color: #ff0080;}
+}
+@-o-keyframes rainbow {
+0% {color: #ff0000;}
+10% {color: #ff8000;}
+20% {color: #ffff00;}
+30% {color: #80ff00;}
+40% {color: #00ff00;}
+50% {color: #00ff80;}
+60% {color: #00ffff;}
+70% {color: #0080ff;}
+80% {color: #0000ff;}
+90% {color: #8000ff;}
+100% {color: #ff0080;}
+}
+@keyframes rainbow {
+0% {color: #ff0000;}
+10% {color: #ff8000;}
+20% {color: #ffff00;}
+30% {color: #80ff00;}
+40% {color: #00ff00;}
+50% {color: #00ff80;}
+60% {color: #00ffff;}
+70% {color: #0080ff;}
+80% {color: #0000ff;}
+90% {color: #8000ff;}
+100% {color: #ff0080;}
+}
