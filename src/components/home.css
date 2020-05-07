@@ -62,7 +62,6 @@ a:active {
   display: inline-block;
   margin: 1em;
   color: #8892B0;
-  width: 430px;
   margin:0 auto;
   margin-top: -0.8rem;
 }
@@ -183,6 +182,7 @@ animation:rainbow 6s infinite;
 -o-animation:rainbow 6s infinite;
 animation:rainbow 6s infinite;
 }
+
 @-webkit-keyframes rainbow1 {
 0% {color: #ff0000;}
 10% {color: #ff8000;}
@@ -241,4 +241,63 @@ animation:rainbow 6s infinite;
   font-size: 1.6rem;
   top: 0;
   transition: top ease 0.5s;
+}
+
+.rainbow2 {
+-webkit-animation:rainbow 6s infinite;
+-ms-animation:rainbow 6s infinite;
+-o-animation:rainbow 6s infinite;
+animation:rainbow 6s infinite;
+}
+@-webkit-keyframes rainbow2 {
+0% {color: #ff0000;}
+10% {color: #ff8000;}
+20% {color: #ffff00;}
+30% {color: #80ff00;}
+40% {color: #00ff00;}
+50% {color: #00ff80;}
+60% {color: #00ffff;}
+70% {color: #0080ff;}
+80% {color: #0000ff;}
+90% {color: #8000ff;}
+100% {color: #ff0080;}
+}
+@-ms-keyframes rainbow2 {
+0% {color: #ff0000;}
+10% {color: #ff8000;}
+20% {color: #ffff00;}
+30% {color: #80ff00;}
+40% {color: #00ff00;}
+50% {color: #00ff80;}
+60% {color: #00ffff;}
+70% {color: #0080ff;}
+80% {color: #0000ff;}
+90% {color: #8000ff;}
+100% {color: #ff0080;}
+}
+@-o-keyframes rainbow2 {
+0% {color: #ff0000;}
+10% {color: #ff8000;}
+20% {color: #ffff00;}
+30% {color: #80ff00;}
+40% {color: #00ff00;}
+50% {color: #00ff80;}
+60% {color: #00ffff;}
+70% {color: #0080ff;}
+80% {color: #0000ff;}
+90% {color: #8000ff;}
+100% {color: #ff0080;}
+}
+@keyframes rainbow2 {
+0% {color: #ff0000;}
+10% {color: #ff8000;}
+20% {color: #ffff00;}
+30% {color: #80ff00;}
+40% {color: #00ff00;}
+50% {color: #00ff80;}
+60% {color: #00ffff;}
+70% {color: #0080ff;}
+80% {color: #0000ff;}
+90% {color: #8000ff;}
+100% {color: #ff0080;}
 }
