@@ -30,7 +30,7 @@ class Head extends Component {
       </Fade>
       </div>
 
-            <div className="tag rainbow flex flex-wrap">
+            <div className="tag rainbow flex flex-wrap justify-center">
               <Fade top>
                 <div className="mr1">
                   <p>Sleep ・</p>
