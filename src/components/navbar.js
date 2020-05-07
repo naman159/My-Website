@@ -88,6 +88,7 @@ class Navbar extends Component {
                 </div>
               </Link>
             </div>
+          </Fade>
 
             <div className="center ma2">
               <Switch>
@@ -97,7 +98,7 @@ class Navbar extends Component {
                 <Route exact path="/contact" component={Contact} />
               </Switch>
             </div>
-            </Fade>
+
           </Router>
     );
   }

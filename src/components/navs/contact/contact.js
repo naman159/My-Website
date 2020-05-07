@@ -1,10 +1,12 @@
 import React, { Component } from "react";
 import "../../home.css";
+import Fade from 'react-reveal/Fade';
 
 class Contact extends Component {
   render() {
     return (
         <div className="flex flex-wrap justify-center pa2">
+        <Fade big>
           <div className="shadow br2 ba bw1 bc mv3 ph2 shadow-2">
             <p>
               <span className="mr1 neon">▹ </span>
@@ -28,6 +30,7 @@ class Contact extends Component {
               </a>
             </p>
           </div>
+          </Fade>
         </div>
     );
   }

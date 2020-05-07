@@ -11,22 +11,27 @@ class Head extends Component {
   render() {
     return (
       <div className="tc flex flex-column justify-center">
-      <Fade big>
-        <Tilt>
-          <div className="rainbow">
-            <a href={l}>
-              <img src="./images/profile.png" alt="avatar" className="ba neon bw3"/>
-            </a>
-          </div>
-        </Tilt>
-      </Fade>
+
+      <div className="center imgWidth name1">
+        <Fade big>
+          <Tilt>
+              <a href={l}>
+                <img src="./images/profile.png" alt="avatar" className="ba neon bw3"/>
+              </a>
+          </Tilt>
+        </Fade>
+      </div>
+
       <div className="name">
       <Fade bottom>
         <div className="mt4">
           <h1 className="myname rainbow">Naman Ranawat</h1>
         </div>
+      </Fade>
+      </div>
 
-              <div className="tag rainbow flex flex-wrap justify-center name2">
+            <div className="tag rainbow flex flex-wrap justify-center">
+              <Fade top>
                 <div className="mr1">
                   <p>Sleep ・</p>
                 </div>
@@ -47,70 +52,73 @@ class Head extends Component {
                   <Typical
                     steps={[
                       '',   //English
-                      1500,
+                      2000,
                       'Yes!',
-                      1500,
+                      2000,
                       '¡Si!',   //Spanish
-                      1500,
+                      2000,
                       'Oui!',   //French
-                      1500,
+                      2000,
                       'हाँ!',     //Hindi
-                      1500,
+                      2000,
                       '是!',     //Chinese
-                      1500,
+                      2000,
                       'はい！',   //Japanese
-                      1500,
+                      2000,
                       'نعم!',    //Turkish
-                      1500,
+                      2000,
                       'Да!',     //Russian
-                      1500,
+                      2000,
                       'Sim!',
-                      1500,
+                      2000,
                       'હા!',
-                      1500,
+                      2000,
                       'ਹਾਂ!',
-                      1500,
+                      2000,
                       'جی ہاں!',
-                      1500,
+                      2000,
                       'होय!',
-                      1500,
+                      2000,
                       'അതെ!',
-                      1500,
+                      2000,
                       'Sì!',
-                      1500,
+                      2000,
                       'Đúng!',
-                      1500,
+                      2000,
                       'Oo!',
-                      1500,
+                      2000,
                       'Ja!',
-                      1500,
+                      2000,
                       '예!',
-                      1500,
+                      2000,
                       'Ita!',
-                      1500,
+                      2000,
                       'Ναί!',
-                      1500,
+                      2000,
                       'Evet!',
-                      1500,
+                      2000,
                       'כן!',
-                      1500,
+                      2000,
                       'Tak!',
-                      1500,
+                      2000,
                       'ஆம்!',
-                      1500,
+                      2000,
                       'Iya!',
-                      1500
+                      2000
                       ]}
                     loop={Infinity}
                     wrapper="b"
                   />
                   </p>
                 </div>
-          </div>
+              </Fade>
+            </div>
+
+
+
           <Navbar anime={this.props.anime}/>
-          </Fade>
+
         </div>
-      </div>
     );
   }
 }
