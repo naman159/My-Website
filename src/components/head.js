@@ -101,7 +101,7 @@ class Head extends Component {
       </div>
       </Fade>
 
-      <Navbar anime={this.props.anime}/>
+      <Navbar anime={this.props.anime} manga={this.props.manga}/>
 
       </div>
     );

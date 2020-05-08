@@ -3,6 +3,7 @@ import "./home.css";
 import Head from "./head";
 import Navbar from "./navbar";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import axios from 'axios'
 const jikanjs = require('jikanjs');
 
 class Home extends Component {
@@ -11,6 +12,7 @@ class Home extends Component {
     super(props);
     this.state = {
       anime:'',
+      manga: '',
       color1:'notneonn',
       color2:'notneonn',
       color3:'notneonn',
@@ -26,6 +28,16 @@ class Home extends Component {
     .catch((err) => {
       console.error(err);
     })
+
+    const url = "http://localhost:3001/manga";
+
+    axios.get(url)
+        .then(res => {
+          //Set state with result
+          console.log(res.data);
+          this.setState({ manga: res.data });
+        });
+
   }
 
   render() {
@@ -33,7 +45,7 @@ class Home extends Component {
       <div className="flex flex-wrap justify-between">
         <div className="center">
         <div className="ml4">
-        <Head anime={this.state.anime}/>
+        <Head anime={this.state.anime} manga={this.state.manga}/>
         </div>
 
         </div>

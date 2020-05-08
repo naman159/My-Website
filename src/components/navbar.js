@@ -94,7 +94,7 @@ class Navbar extends Component {
               <Switch>
                 <Route exact path="/code" component={Code} />
                 <Route exact path="/notes" component={Notes} />
-                <Route exact path="/otaku" render={(props) => <Otaku {...props} anime={this.props.anime} />} />
+                <Route exact path="/otaku" render={(props) => <Otaku {...props} anime={this.props.anime} manga={this.props.manga} />} />
                 <Route exact path="/contact" component={Contact} />
               </Switch>
             </div>
