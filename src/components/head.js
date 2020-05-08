@@ -7,91 +7,66 @@ import Navbar from "./navbar";
 
 const l = "http://localhost:3000/";
 
-
-/*
-<div className="tag rainbow flex flex-wrap justify-center">
-  <Fade top>
-    <div className="mr1">
-      <p>Sleep ・</p>
-    </div>
-    <div className="mr1">
-      <p className="mr1">Code ・</p>
-    </div>
-    <div className="mr1">
-      <p className="mr1">Watch ・</p>
-    </div>
-    <div className="mr1">
-      <p className="mr1">Read ・</p>
-    </div>
-    <div className="mr1">
-      <p className="mr1">Repeat ?</p>
-    </div>
-    <div className="mr1 grow">
-      <p>
-      <Typical
-        steps={[
-          '',   //English
-          2000,
-          'Yes!',
-          2000,
-          '¡Si!',   //Spanish
-          2000,
-          'Oui!',   //French
-          2000,
-          'हाँ!',     //Hindi
-          2000,
-          '是!',     //Chinese
-          2000,
-          'はい！',   //Japanese
-          2000,
-          'نعم!',    //Turkish
-          2000,
-          'Да!',     //Russian
-          2000,
-          'Sim!',
-          2000,
-          'હા!',
-          2000,
-          'ਹਾਂ!',
-          2000,
-          'جی ہاں!',
-          2000,
-          'होय!',
-          2000,
-          'അതെ!',
-          2000,
-          'Sì!',
-          2000,
-          'Đúng!',
-          2000,
-          'Oo!',
-          2000,
-          'Ja!',
-          2000,
-          '예!',
-          2000,
-          'Ita!',
-          2000,
-          'Ναί!',
-          2000,
-          'Evet!',
-          2000,
-          'כן!',
-          2000,
-          'Tak!',
-          2000,
-          'ஆம்!',
-          2000,
-          'Iya!',
-          2000
-          ]}
-        loop={Infinity}
-        wrapper="b"
-      />
-      </p>
-    </div>
-  </Fade>
-  */
+/*<span className="mr1">
+  <Typical
+    steps={[
+      'Yes!',
+      2000,
+      '¡Si!',   //Spanish
+      2000,
+      'Oui!',   //French
+      2000,
+      'हाँ!',     //Hindi
+      2000,
+      '是!',     //Chinese
+      2000,
+      'はい！',   //Japanese
+      2000,
+      'نعم!',    //Turkish
+      2000,
+      'Да!',     //Russian
+      2000,
+      'Sim!',
+      2000,
+      'હા!',
+      2000,
+      'ਹਾਂ!',
+      2000,
+      'جی ہاں!',
+      2000,
+      'होय!',
+      2000,
+      'അതെ!',
+      2000,
+      'Sì!',
+      2000,
+      'Đúng!',
+      2000,
+      'Oo!',
+      2000,
+      'Ja!',
+      2000,
+      '예!',
+      2000,
+      'Ita!',
+      2000,
+      'Ναί!',
+      2000,
+      'Evet!',
+      2000,
+      'כן!',
+      2000,
+      'Tak!',
+      2000,
+      'ஆம்!',
+      2000,
+      'Iya!',
+      2000
+      ]}
+    loop={Infinity}
+    wrapper="b"
+  />
+</span>*/
 
 class Head extends Component {
   render() {
@@ -116,79 +91,16 @@ class Head extends Component {
       </Fade>
       </div>
 
-
-
       <Fade top>
-      <div className="rainbow pb2 mb2">
+      <div className="pb2 mb2 rainbow">
         <span className="mr1">Sleep ・</span>
         <span className="mr1"> Code ・</span>
         <span className="mr1">Watch ・</span>
         <span className="mr1">Read ・</span>
-        <span className="mr1">Repeat ?</span>
-        <span className="mr1 grow">
-          <Typical
-            steps={[
-              '',   //English
-              2000,
-              'Yes!',
-              2000,
-              '¡Si!',   //Spanish
-              2000,
-              'Oui!',   //French
-              2000,
-              'हाँ!',     //Hindi
-              2000,
-              '是!',     //Chinese
-              2000,
-              'はい！',   //Japanese
-              2000,
-              'نعم!',    //Turkish
-              2000,
-              'Да!',     //Russian
-              2000,
-              'Sim!',
-              2000,
-              'હા!',
-              2000,
-              'ਹਾਂ!',
-              2000,
-              'جی ہاں!',
-              2000,
-              'होय!',
-              2000,
-              'അതെ!',
-              2000,
-              'Sì!',
-              2000,
-              'Đúng!',
-              2000,
-              'Oo!',
-              2000,
-              'Ja!',
-              2000,
-              '예!',
-              2000,
-              'Ita!',
-              2000,
-              'Ναί!',
-              2000,
-              'Evet!',
-              2000,
-              'כן!',
-              2000,
-              'Tak!',
-              2000,
-              'ஆம்!',
-              2000,
-              'Iya!',
-              2000
-              ]}
-            loop={Infinity}
-            wrapper="b"
-          />
-        </span>
-        </div>
+        <span className="mr1">Repeat</span>
+      </div>
       </Fade>
+
       <Navbar anime={this.props.anime}/>
 
       </div>
