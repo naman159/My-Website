@@ -29,7 +29,7 @@ class Home extends Component {
       console.error(err);
     })
 
-    const url = "http://localhost:3001/manga";
+    const url = "https://namanranawat.herokuapp.com/manga";
 
     axios.get(url)
         .then(res => {
