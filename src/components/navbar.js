@@ -5,6 +5,7 @@ import Code from "./navs/code/code";
 import Notes from "./navs/notes/notes";
 import Otaku from "./navs/otaku/otaku";
 import Contact from "./navs/contact/contact";
+import About from "./navs/about/about";
 import Fade from 'react-reveal/Fade';
 
 class Navbar extends Component {
@@ -12,23 +13,35 @@ class Navbar extends Component {
   constructor(props){
     super(props);
     this.state = {
+      color0: "ba w-15 pa3 mr1 dim link hover neon round shadow-1",
       color1: "ba w-15 pa3 mr1 dim link hover neon round shadow-1",
-      color2: "ba w-15 pa3 mr1  dim link hover neon round shadow-1",
-      color3: "ba w-15 pa3 mr1  dim link hover neon round shadow-1",
-      color4: "ba w-15 pa3 mr1  dim link hover neon round shadow-1",
+      color2: "ba w-15 pa3 mr1 dim link hover neon round shadow-1",
+      color3: "ba w-15 pa3 mr1 dim link hover neon round shadow-1",
+      color4: "ba w-15 pa3 mr1 dim link hover neon round shadow-1",
     }
+  }
+
+  changeColor0 = () => {
+    this.setState({
+      color0: "ba w-15 pa3 mr1 link hover neon route round shadow-1",
+      color1: "ba w-15 pa3 mr1 dim link hover neon round shadow-1",
+      color2: "ba w-15 pa3 mr1 dim link hover neon round shadow-1",
+      color3: "ba w-15 pa3 mr1 dim link hover neon round shadow-1",
+      color4: "ba w-15 pa3 mr1 dim link hover neon round shadow-1" });
   }
 
   changeColor1 = () => {
     this.setState({
+      color0: "ba w-15 pa3 mr1 dim link hover neon round shadow-1",
       color1: "ba w-15 pa3 mr1 link hover neon route round shadow-1",
-      color2: "ba w-15 pa3 mr1  dim link hover neon round shadow-1",
-      color3: "ba w-15 pa3 mr1  dim link hover neon round shadow-1",
-      color4: "ba w-15 pa3 mr1  dim link hover neon round shadow-1" });
+      color2: "ba w-15 pa3 mr1 dim link hover neon round shadow-1",
+      color3: "ba w-15 pa3 mr1 dim link hover neon round shadow-1",
+      color4: "ba w-15 pa3 mr1 dim link hover neon round shadow-1" });
   }
 
   changeColor2 = () => {
     this.setState({
+      color0: "ba w-15 pa3 mr1 dim link hover neon round shadow-1",
       color1: "ba w-15 pa3 mr1 dim link hover neon round shadow-1",
       color2: "ba w-15 pa3 mr1 link hover neon route round shadow-1",
       color3: "ba w-15 pa3 mr1 dim link hover neon round shadow-1",
@@ -37,6 +50,7 @@ class Navbar extends Component {
 
   changeColor3 = () => {
     this.setState({
+      color0: "ba w-15 pa3 mr1 dim link hover neon round shadow-1",
       color1: "ba w-15 pa3 mr1 dim link hover neon round shadow-1",
       color2: "ba w-15 pa3 mr1 dim link hover neon round shadow-1",
       color3: "ba w-15 pa3 mr1 link hover neon route round shadow-1",
@@ -45,6 +59,7 @@ class Navbar extends Component {
 
   changeColor4 = () => {
     this.setState({
+      color0: "ba w-15 pa3 mr1 dim link hover neon round shadow-1",
       color1: "ba w-15 pa3 mr1 dim link hover neon round shadow-1",
       color2: "ba w-15 pa3 mr1 dim link hover neon round shadow-1",
       color3: "ba w-15 pa3 mr1 dim link hover neon round shadow-1",
@@ -57,6 +72,11 @@ class Navbar extends Component {
           <Router>
           <Fade bottom>
             <div className="flex flex-wrap justify-center">
+              <Link to="/about">
+                <div onClick={this.changeColor0} className={this.state.color0}>
+                  <code>About</code>
+                </div>
+              </Link>
               <a style={{display: "table-cell"}} href="https://github.com/naman159" target="_blank" rel="noopener noreferrer">
                 <div className="ba w-15 pa3 mr1  dim link hover neon round shadow-1">
                   <code>GitHub</code>
@@ -92,6 +112,7 @@ class Navbar extends Component {
 
             <div className="center ma2">
               <Switch>
+                <Route exact path="/about" component={About} />
                 <Route exact path="/code" component={Code} />
                 <Route exact path="/notes" component={Notes} />
                 <Route exact path="/otaku" render={(props) => <Otaku {...props} anime={this.props.anime} manga={this.props.manga} />} />

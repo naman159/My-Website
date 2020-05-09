@@ -5,7 +5,7 @@ import Tilt from 'react-tilt';
 import Fade from 'react-reveal/Fade';
 import Navbar from "./navbar";
 
-const l = "http://localhost:3000/";
+const l = "http://namanranawat.netlify.app/";
 
 /*<span className="mr1">
   <Typical
