@@ -18,6 +18,50 @@ class Navbar extends Component {
       color2: "ba w-15 pa3 mr1 dim link hover neon round shadow-1",
       color3: "ba w-15 pa3 mr1 dim link hover neon round shadow-1",
       color4: "ba w-15 pa3 mr1 dim link hover neon round shadow-1",
+      current: window.location.pathname,
+    }
+  }
+
+  componentDidMount(){
+    if(this.state.current === "/about") {
+      this.setState({
+        color0: "ba w-15 pa3 mr1 link hover neon route round shadow-1",
+        color1: "ba w-15 pa3 mr1 dim link hover neon round shadow-1",
+        color2: "ba w-15 pa3 mr1 dim link hover neon round shadow-1",
+        color3: "ba w-15 pa3 mr1 dim link hover neon round shadow-1",
+        color4: "ba w-15 pa3 mr1 dim link hover neon round shadow-1" });
+    }
+    else if(this.state.current === "/code") {
+      this.setState({
+        color0: "ba w-15 pa3 mr1 dim link hover neon round shadow-1",
+        color1: "ba w-15 pa3 mr1 link hover neon route round shadow-1",
+        color2: "ba w-15 pa3 mr1 dim link hover neon round shadow-1",
+        color3: "ba w-15 pa3 mr1 dim link hover neon round shadow-1",
+        color4: "ba w-15 pa3 mr1 dim link hover neon round shadow-1" });
+    }
+    else if(this.state.current === "/otaku") {
+      this.setState({
+        color0: "ba w-15 pa3 mr1 dim link hover neon round shadow-1",
+        color1: "ba w-15 pa3 mr1 dim link hover neon round shadow-1",
+        color2: "ba w-15 pa3 mr1 link hover neon route round shadow-1",
+        color3: "ba w-15 pa3 mr1 dim link hover neon round shadow-1",
+        color4: "ba w-15 pa3 mr1 dim link hover neon round shadow-1" });
+    }
+    else if(this.state.current === "/notes") {
+      this.setState({
+        color0: "ba w-15 pa3 mr1 dim link hover neon round shadow-1",
+        color1: "ba w-15 pa3 mr1 dim link hover neon round shadow-1",
+        color2: "ba w-15 pa3 mr1 dim link hover neon round shadow-1",
+        color3: "ba w-15 pa3 mr1 link hover neon route round shadow-1",
+        color4: "ba w-15 pa3 mr1 dim link hover neon round shadow-1" });
+    }
+    else if(this.state.current === "/contact") {
+      this.setState({
+        color0: "ba w-15 pa3 mr1 dim link hover neon round shadow-1",
+        color1: "ba w-15 pa3 mr1 dim link hover neon round shadow-1",
+        color2: "ba w-15 pa3 mr1 dim link hover neon round shadow-1",
+        color3: "ba w-15 pa3 mr1 dim link hover neon round shadow-1",
+        color4: "ba w-15 pa3 mr1 link hover neon route round shadow-1" });
     }
   }
 
