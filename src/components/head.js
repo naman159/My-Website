@@ -92,10 +92,10 @@ class Head extends Component {
       </div>
 
       <Fade top>
-        <div className="pb2 mb2">
+        <div className="pb2 mb2 tbox center">
           <div className="rainbow">
             <span className="mr1">Sleep ・</span>
-            <span className="mr1"> Code ・</span>
+            <span className="mr1">Code ・</span>
             <span className="mr1">Watch ・</span>
             <span className="mr1">Read ・</span>
             <span className="mr1">Repeat</span>

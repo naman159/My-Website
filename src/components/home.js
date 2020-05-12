@@ -42,60 +42,61 @@ class Home extends Component {
 
   render() {
     return (
-      <div className="flex flex-wrap justify-between">
-        <div className="center">
-        <div className="ml4">
-        <Head anime={this.state.anime} manga={this.state.manga}/>
-        </div>
+      <div className="flex flex-wrap">
 
-        </div>
+      <div className="tl">
+      <div className="flex flex-column">
 
-        <div className="tr">
-        <div className="flex flex-column mr4 mt2">
+      <div className="isize pa2">
+        <a style={{display: "table-cell"}} href="https://www.github.com/naman159" target="_blank" rel="noopener noreferrer"
+          onMouseOver={() => { this.setState({color1: "rainbow neon grow"})}}
+          onMouseOut={() => { this.setState({color1: "notneonn grow"})}}
+          >
+          <FontAwesomeIcon icon={['fab', 'github']} className={this.state.color1}/>
+        </a>
+      </div>
 
         <div className="isize pa2">
-          <a style={{display: "table-cell"}} href="https://www.github.com/naman159" target="_blank" rel="noopener noreferrer"
-            onMouseOver={() => { this.setState({color1: "rainbow neon grow"})}}
-            onMouseOut={() => { this.setState({color1: "notneonn grow"})}}
-            >
-            <FontAwesomeIcon icon={['fab', 'github']} className={this.state.color1}/>
+          <a style={{display: "table-cell"}} href="https://www.linkedin.com/in/nranawat/" target="_blank" rel="noopener noreferrer"
+          onMouseOver={() => { this.setState({color2: "rainbow neon grow"})}}
+          onMouseOut={() => { this.setState({color2: "notneonn grow"})}}
+          >
+            <FontAwesomeIcon icon={['fab', 'linkedin']} className={this.state.color2}/>
           </a>
         </div>
 
-          <div className="isize pa2">
-            <a style={{display: "table-cell"}} href="https://www.linkedin.com/in/nranawat/" target="_blank" rel="noopener noreferrer"
-            onMouseOver={() => { this.setState({color2: "rainbow neon grow"})}}
-            onMouseOut={() => { this.setState({color2: "notneonn grow"})}}
-            >
-              <FontAwesomeIcon icon={['fab', 'linkedin']} className={this.state.color2}/>
-            </a>
-          </div>
-
-          <div className="isize pa2"
-            onMouseOver={(e) => { e.target.style.color3 = '#64FFDA' }}
-            onMouseOut={(e) => { e.target.style.color3 = '#8892B0' }}>
-            <a style={{display: "table-cell"}} href="https://www.instagram.com/trademarkedsetups/" target="_blank" rel="noopener noreferrer"
-            onMouseOver={() => { this.setState({color3: "rainbow neon grow"})}}
-            onMouseOut={() => { this.setState({color3: "notneonn grow"})}}
-            >
-            <FontAwesomeIcon icon={['fab', 'instagram']} className={this.state.color3}/>
-            </a>
-          </div>
-
-          <div className="isize pa2"
-            onMouseOver={(e) => { e.target.style.color4 = '#64FFDA' }}
-            onMouseOut={(e) => { e.target.style.color4 = '#8892B0' }}>
-            <a style={{display: "table-cell"}} href="https://twitter.com/naman1591" target="_blank" rel="noopener noreferrer"
-            onMouseOver={() => { this.setState({color4: "rainbow neon grow"})}}
-            onMouseOut={() => { this.setState({color4: "notneonn grow"})}}
-            >
-            <FontAwesomeIcon icon={['fab', 'twitter']} className={this.state.color4}/>
-            </a>
-          </div>
-
+        <div className="isize pa2"
+          onMouseOver={(e) => { e.target.style.color3 = '#64FFDA' }}
+          onMouseOut={(e) => { e.target.style.color3 = '#8892B0' }}>
+          <a style={{display: "table-cell"}} href="https://www.instagram.com/trademarkedsetups/" target="_blank" rel="noopener noreferrer"
+          onMouseOver={() => { this.setState({color3: "rainbow neon grow"})}}
+          onMouseOut={() => { this.setState({color3: "notneonn grow"})}}
+          >
+          <FontAwesomeIcon icon={['fab', 'instagram']} className={this.state.color3}/>
+          </a>
         </div>
 
+        <div className="isize pa2"
+          onMouseOver={(e) => { e.target.style.color4 = '#64FFDA' }}
+          onMouseOut={(e) => { e.target.style.color4 = '#8892B0' }}>
+          <a style={{display: "table-cell"}} href="https://twitter.com/naman1591" target="_blank" rel="noopener noreferrer"
+          onMouseOver={() => { this.setState({color4: "rainbow neon grow"})}}
+          onMouseOut={() => { this.setState({color4: "notneonn grow"})}}
+          >
+          <FontAwesomeIcon icon={['fab', 'twitter']} className={this.state.color4}/>
+          </a>
         </div>
+
+      </div>
+      </div>
+
+
+        <div className="center">
+          <Head anime={this.state.anime} manga={this.state.manga}/>
+        </div>
+
+
+
       </div>
     );
   }

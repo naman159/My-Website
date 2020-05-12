@@ -5,8 +5,9 @@ class Notes extends Component {
     return (
       <div className="mt2">
         <div>
-          <h4 className="tc neon">Notes. </h4>
+          <h4 className="tc neon">Notes.</h4>
         </div>
+        <p>Still wondering what to do with this 😅.</p>
       </div>
     );
   }
