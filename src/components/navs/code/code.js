@@ -23,12 +23,12 @@ class Code extends Component {
             <p className="tl">
               <span className="mr1 neon">▹ </span>
               <span className="notneon mr2">Web Technologies :</span>
-              <span>HTML & CSS, React, Node.js, Express.js</span>
+              <span>HTML & CSS, React, Node.js, Express.js, Flask</span>
             </p>
             <p className="tl">
               <span className="mr1 neon">▹ </span>
               <span className="notneon mr2">Python Scientific Libraries :</span>
-              <span>Numpy, Pandas, Matplotlib, Seaborn, Plotly, Scikit Learn, Tensorflow & Keras, Pytorch & Fast.ai</span>
+              <span>Numpy, Pandas, Matplotlib, Seaborn, Plotly, Scikit-learn, Tensorflow & Keras, Pytorch & Fast.ai</span>
             </p>
           </div>
         </Fade>

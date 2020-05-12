@@ -44,7 +44,7 @@ class Home extends Component {
     return (
       <div className="flex flex-wrap">
 
-      <div className="tl">
+      <div className="tr">
       <div className="flex flex-column">
 
       <div className="isize pa2">
@@ -93,6 +93,12 @@ class Home extends Component {
 
         <div className="center">
           <Head anime={this.state.anime} manga={this.state.manga}/>
+        </div>
+
+        <div className="tr">
+        <div className="flex flex-column isize pa2">
+
+        </div>
         </div>
 
 
