@@ -6,4 +6,4 @@ Node.js
 Express.js 
 ## Deployed:
 https://namanranawat.netlify.app  
-namanranawat.me (should start working soon)
+www.namanranawat.me (should start working soon)
