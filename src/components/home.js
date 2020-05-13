@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import "./home.css";
 import Head from "./head";
-import Navbar from "./navbar";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import axios from 'axios'
 const jikanjs = require('jikanjs');

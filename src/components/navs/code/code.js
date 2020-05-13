@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import Typical from 'react-typical';
 import Fade from 'react-reveal/Fade';
 
 class Code extends Component {
