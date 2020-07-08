@@ -4,6 +4,7 @@ A personal website with a web-appish, rough around the edges look combined with 
 React  
 Node.js 
 Express.js 
-## Deployed:
+## Deployed on Netlify:
+www.namanranawat.me
 https://namanranawat.netlify.app  
-www.namanranawat.me (should start working soon)
+
