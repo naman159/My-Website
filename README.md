@@ -5,6 +5,6 @@ React
 Node.js 
 Express.js 
 ## Deployed on Netlify:
-www.namanranawat.me
+www.namanranawat.me  
 https://namanranawat.netlify.app  
 
